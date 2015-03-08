@@ -28,7 +28,7 @@ with(result,
           xlab = NA,
           xaxt = "n")
 )
-axis(side = 1, labels = weekdays(result$Date), at = NULL)
+axis(side = 1, labels = c("Thu", "Fri", "Sat"), at = c(0, 1440, 2880))
 
 
 dev.off()
